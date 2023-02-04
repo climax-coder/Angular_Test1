@@ -1,0 +1,91 @@
+<nav
+  class="navbar navbar-dark navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+>
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']">Logo</a>
+    <div
+      class="nav-icon d-lg-none"
+      [ngClass]="{'open': menuOpen}"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="openMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div
+      class="collapse navbar-collapse justify-content-between"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/home']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/about']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/cases']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >Cases</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/contact']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/login']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/register']"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
+            (click)="openMenu()"
+            >Register</a
+          >
+        </li>
+        <app-theme></app-theme>
+      </ul>
+    </div>
+  </div>
+</nav>
